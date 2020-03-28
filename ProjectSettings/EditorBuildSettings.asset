@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartGame.unity
+    guid: 06ccaba6c73f54abb9ea933c45a75bfc
+  - enabled: 1
+    path: Assets/Scenes/Mistery.unity
+    guid: 60a0198e6577140239d65b11129d06d9
+  - enabled: 1
+    path: Assets/Scenes/JavaWorld.unity
+    guid: 8ca995591b0fe43568a0a716f8bf0e09
+  - enabled: 1
+    path: Assets/Scenes/PythonWorld.unity
+    guid: 52431d67547234c47911c6f3100b5bea
+  - enabled: 1
+    path: Assets/Scenes/SolveCase.unity
+    guid: e311437e3cf464872934c0f1682e3e6f
+  - enabled: 1
+    path: Assets/Scenes/WitnessJava.unity
+    guid: 96f2195deebfe4cbba1a529676c4c800
+  - enabled: 1
+    path: Assets/Scenes/WitnessPython.unity
+    guid: 2a3d097ebd59e4d4f907bf74dfafc96b
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 137694ac10c2849d980bff796dd54ab0
+  m_configObjects: {}
