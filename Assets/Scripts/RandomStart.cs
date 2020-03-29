@@ -87,9 +87,9 @@ public class RandomStart : MonoBehaviour {
 
                 // JAVA TESTIMONIES
                 javaOptions.Add("Quando não se sabe quantas vezes um comando deve ser repetido, utilizamos o comando WHILE.");
-                javaOptions.Add("Se eu fosse você pesquisaria mais sobre esse tipo de estrutura: \nFaça { (comando) } Enquanto (condição);");
-                javaOptions.Add("Só sei que ao utilizar o WHILE, pode ser que o comando nunca seja executado.");
                 javaOptions.Add("Projetos em JAVA costumam utilizar as classes dentro de pacotes.");
+                javaOptions.Add("Só sei que ao utilizar o WHILE, pode ser que o comando nunca seja executado.");
+                javaOptions.Add("Se eu fosse você pesquisaria mais sobre esse tipo de estrutura:\nFaça {(comando)} Enquanto (condição);");
 
                 // PYTHON ANNOTATIONS
                 pythonAnnotations.Add("Python é uma linguagem interpretada");
@@ -99,9 +99,9 @@ public class RandomStart : MonoBehaviour {
 
                 // JAVA ANNOTATIONS
                 javaAnnotations.Add("A quantidade de repetições é incerta com WHILE");
-                javaAnnotations.Add("Pesquisar:\nFaça { (comando) } Enquanto (condição);");
-                javaAnnotations.Add("WHILE: o comando pode nunca ser executado");
                 javaAnnotations.Add("Java utiliza pacotes");
+                javaAnnotations.Add("WHILE: o comando pode nunca ser executado");
+                javaAnnotations.Add("Pesquisar:\nFaça { (comando) } Enquanto (condição);");
 
                 break;
             default:

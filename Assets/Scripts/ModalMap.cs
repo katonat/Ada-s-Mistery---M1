@@ -28,16 +28,16 @@ public class ModalMap : MonoBehaviour {
     		ClosePanel();
     }
 
-    public void Choice (UnityAction javaWorldEvent, UnityAction pythonWorldEvent) {
+    public void Choice () {
         modalPanelObject.SetActive (true);
 
         javaWorld.onClick.RemoveAllListeners();
-        javaWorld.onClick.AddListener (javaWorldEvent);
-        javaWorld.onClick.AddListener (ClosePanel);
+        javaWorld.onClick.AddListener (changeSceneJavaWorld);
+        // javaWorld.onClick.AddListener (ClosePanel);
 
         pythonWorld.onClick.RemoveAllListeners();
-        pythonWorld.onClick.AddListener (pythonWorldEvent);
-        pythonWorld.onClick.AddListener (ClosePanel);
+        pythonWorld.onClick.AddListener (changeScenePythonWorld);
+        // pythonWorld.onClick.AddListener (ClosePanel);
 
         cancel.onClick.RemoveAllListeners();
         cancel.onClick.AddListener (ClosePanel);
@@ -49,6 +49,14 @@ public class ModalMap : MonoBehaviour {
 
     void ClosePanel () {
         modalPanelObject.SetActive (false);
+    }
+
+    void changeScenePythonWorld () {
+        SceneManager.LoadScene("PythonWorld");
+    }
+
+    void changeSceneJavaWorld () {
+        SceneManager.LoadScene("JavaWorld");
     }
 
 }

@@ -28,7 +28,7 @@ public class SolveCase : MonoBehaviour {
 
 		misteryNumber = RandomStart.GetMisteryNumber();
 
-        if (RandomStart.notesCounter == 5)
+        if (RandomStart.notesCounter == 5 || (RandomStart.pythonOptions.Count == 0 && RandomStart.javaOptions.Count == 0))
             solveCasePanel.SetActive (true);
 
         if (misteryNumber == 1) {

@@ -6,26 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class TestModalWindowMap : MonoBehaviour {
     private ModalMap modalMap;
-    private UnityAction javaWorldAction;
-    private UnityAction pythonWorld2Action;
+    // private UnityAction javaWorldAction;
+    // private UnityAction pythonWorld2Action;
 
     void Awake () {
         modalMap = ModalMap.Instance ();
-        javaWorldAction = new UnityAction (changeSceneJavaWorld);
-        pythonWorld2Action = new UnityAction (changeScenePythonWorld);
+        // javaWorldAction = new UnityAction (changeSceneJavaWorld);
+        // pythonWorld2Action = new UnityAction (changeScenePythonWorld);
     }
 
     public void ChooseWorld () {
-        modalMap.Choice (changeSceneJavaWorld, changeScenePythonWorld);
+        modalMap.Choice ();
     }
 
 
-    void changeScenePythonWorld () {
-        SceneManager.LoadScene("PythonWorld");
-    }
+    // void changeScenePythonWorld () {
+    //     SceneManager.LoadScene("PythonWorld");
+    // }
 
-    void changeSceneJavaWorld () {
-        SceneManager.LoadScene("JavaWorld");
-    }
+    // void changeSceneJavaWorld () {
+    //     SceneManager.LoadScene("JavaWorld");
+    // }
 
 }
