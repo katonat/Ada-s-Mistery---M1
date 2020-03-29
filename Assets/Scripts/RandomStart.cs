@@ -45,6 +45,8 @@ public class RandomStart : MonoBehaviour {
 
 
     public void Start() {
+        win = false;
+        notesCounter = 0;
         randomNumber = randomMistery();
 
         switch(randomNumber) {
