@@ -10,6 +10,7 @@ public class RandomStart : MonoBehaviour {
 	public int total;
 	public int randomNumber;
     private static int misteryNumber;
+    public static bool win = false;
 
     // TESTIMONIES
     public static List<string> pythonOptions;
@@ -90,8 +91,7 @@ public class RandomStart : MonoBehaviour {
                 javaOptions.Add("Só sei que ao utilizar o WHILE, pode ser que o comando nunca seja executado.");
                 javaOptions.Add("Projetos em JAVA costumam utilizar as classes dentro de pacotes.");
 
-
-                                // PYTHON ANNOTATIONS
+                // PYTHON ANNOTATIONS
                 pythonAnnotations.Add("Python é uma linguagem interpretada");
                 pythonAnnotations.Add("Python é multiplataforma");
                 pythonAnnotations.Add("DO-WHILE executa o comando pelo menos uma vez");

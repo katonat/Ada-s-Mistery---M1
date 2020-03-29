@@ -18,9 +18,6 @@ EditorBuildSettings:
     path: Assets/Scenes/PythonWorld.unity
     guid: 52431d67547234c47911c6f3100b5bea
   - enabled: 1
-    path: Assets/Scenes/SolveCase.unity
-    guid: e311437e3cf464872934c0f1682e3e6f
-  - enabled: 1
     path: Assets/Scenes/WitnessJava.unity
     guid: 96f2195deebfe4cbba1a529676c4c800
   - enabled: 1
@@ -29,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 137694ac10c2849d980bff796dd54ab0
+  - enabled: 1
+    path: Assets/Scenes/Congratulations.unity
+    guid: 9265dd31b677e314b947d053691d2dd9
   m_configObjects: {}

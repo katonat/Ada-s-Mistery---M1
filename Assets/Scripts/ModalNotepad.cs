@@ -21,19 +21,8 @@ public class ModalNotepad : MonoBehaviour {
 	public GameObject annotation4;
 	public GameObject annotation5;
 
-
-	// SOLVE CASE CHOICES
-	public Button RightAnswerButton;
-	public Button bt1;
-	public Button bt2;
-	public Button bt3;
-	public Button bt4;
-	public Text RightAnswerText = null;
-	public Text Text1 = null;
-	public Text Text2 = null;
-	public Text Text3 = null;
-	public Text Text4 = null;
-
+	// QUESTION
+	public GameObject question;
 
     private static ModalNotepad modalNotepad;
 
@@ -61,9 +50,9 @@ public class ModalNotepad : MonoBehaviour {
     	modalNotepadPanel.SetActive (true);
 
 		putAnnotations();    	
-
+		setQuestion();
+		
         next.onClick.RemoveAllListeners();
-        next.onClick.AddListener (changeAnnotations);
         next.onClick.AddListener (closeButton);
         next.onClick.AddListener (activatePreviousButton);
 
@@ -80,28 +69,6 @@ public class ModalNotepad : MonoBehaviour {
     	annotation5.GetComponent<Text>().text = RandomStart.playerAnnotations[4];
     }
 
-
-    public void changeAnnotations() {
-    	mistery = RandomStart.GetMisteryNumber();
-
-    	choicesPanel.SetActive (true);
-
-    	// SET TEXT OF THOSE BUTTONS
-    	if (mistery == 1) {
-			RightAnswerText.text = "PYTHON";
-			Text1.text = "JAVA";
-			Text2.text = "ASSEMBLY";
-			Text3.text = "HTML";
-			Text4.text = "C";
-		} else if (mistery == 2) {
-			RightAnswerText.text = "DO - WHILE";
-			Text1.text = "FOR";
-			Text2.text = "WHILE";
-			Text3.text = "SWITCH";
-			Text4.text = "TRY - CATCH";
-		}
-    }
-
     public void closeButton() {
     	next.gameObject.SetActive (false);
     }
@@ -111,7 +78,12 @@ public class ModalNotepad : MonoBehaviour {
     }
 
 
-
+    public void setQuestion() {
+    	if (RandomStart.GetMisteryNumber() == 1)
+    		question.GetComponent<Text>().text = "Qual é a linguagem de programação que está sendo utitilizada com tecnologias atuais, como IA?";
+    	else if(RandomStart.GetMisteryNumber() == 2)
+    		question.GetComponent<Text>().text = "Qual é o comando de repetição que Ada está procurando?";
+    }
 
 
 

@@ -7,23 +7,29 @@ public class SolveCase : MonoBehaviour {
 
     public GameObject solveCasePanel;
     private int misteryNumber;
-    private List<string> options;
+
+    // BUTTONS TEXTS
     public GameObject option1;
     public GameObject option2;
     public GameObject option3;
     public GameObject option4;
-    public GameObject optionRight;
+    public GameObject option5;
 
+    // SOLVE CASE OPTIONS
+    private int random = 0;
+    private int counter = 0;
+    private List<string> misteryChoices;
+    private List<string> options;
 
 	void Start() {
 
 		options = new List<string>();
+        misteryChoices = new List<string>() {"", "", "", "", ""};
 
 		misteryNumber = RandomStart.GetMisteryNumber();
 
-        if (RandomStart.notesCounter >= 1)
+        if (RandomStart.notesCounter == 5)
             solveCasePanel.SetActive (true);
-        
 
         if (misteryNumber == 1) {
         	options.Add("Java");
@@ -39,14 +45,17 @@ public class SolveCase : MonoBehaviour {
         	options.Add("Switch");
         }
 
-        option1.GetComponent<Text>().text = options[0];
-        option2.GetComponent<Text>().text = options[1];
-        option3.GetComponent<Text>().text = options[2];
-        optionRight.GetComponent<Text>().text = options[3];
-        option4.GetComponent<Text>().text = options[4];
+        while (counter < 5) {
+            random = Random.Range(0, 5);
+            if (misteryChoices[random] == "") 
+                misteryChoices[random] = options[counter++];
+        }
 
-
+        option1.GetComponent<Text>().text = misteryChoices[0];
+        option2.GetComponent<Text>().text = misteryChoices[1];
+        option3.GetComponent<Text>().text = misteryChoices[2];
+        option4.GetComponent<Text>().text = misteryChoices[3];
+        option5.GetComponent<Text>().text = misteryChoices[4];
 
 	}
-
 }

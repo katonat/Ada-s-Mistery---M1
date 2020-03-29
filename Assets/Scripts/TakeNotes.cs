@@ -16,21 +16,22 @@ public class TakeNotes : MonoBehaviour {
 
 
     public void savePythonAnnotation() {
-        RandomStart.playerAnnotations.Insert(RandomStart.notesCounter, RandomStart.pythonAnnotations[RandomStart.pythonOptions.Count]);
-        RandomStart.pythonAnnotations.RemoveAt(RandomStart.pythonOptions.Count);
-        RandomStart.notesCounter++;
-        
+        if(RandomStart.pythonOptions.Count >= 0) {
+            RandomStart.playerAnnotations.Insert(RandomStart.notesCounter, RandomStart.pythonAnnotations[RandomStart.pythonOptions.Count]);
+            RandomStart.pythonAnnotations.RemoveAt(RandomStart.pythonOptions.Count);
+            RandomStart.notesCounter++;
+        }
     }
 
     public void saveJavaAnnotation() {
-        RandomStart.playerAnnotations.Insert(RandomStart.notesCounter, RandomStart.javaAnnotations[RandomStart.javaOptions.Count]);
-        RandomStart.javaAnnotations.RemoveAt(RandomStart.javaOptions.Count);
-        RandomStart.notesCounter++;
-        
+        if (RandomStart.javaOptions.Count >= 0) {
+            RandomStart.playerAnnotations.Insert(RandomStart.notesCounter, RandomStart.javaAnnotations[RandomStart.javaOptions.Count]);
+            RandomStart.javaAnnotations.RemoveAt(RandomStart.javaOptions.Count);
+            RandomStart.notesCounter++;
+        }
     }
 
     public void closeTakeNoteButton (string buttonName) {
-        // GameObject.Find(buttonName).interactable = false;
         GameObject.Find(buttonName).GetComponent<Button>().interactable = false;
     }
 

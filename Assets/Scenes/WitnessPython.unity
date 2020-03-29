@@ -2618,6 +2618,7 @@ MonoBehaviour:
   total: 0
   randomNumber: 0
   world: Python
+  takeNote: {fileID: 1290444869}
 --- !u!114 &2082991670
 MonoBehaviour:
   m_ObjectHideFlags: 0

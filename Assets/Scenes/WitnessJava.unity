@@ -2186,6 +2186,7 @@ MonoBehaviour:
   total: 0
   randomNumber: 0
   world: Java
+  takeNote: {fileID: 759769732}
 --- !u!114 &1931585355
 MonoBehaviour:
   m_ObjectHideFlags: 0

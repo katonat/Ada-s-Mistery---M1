@@ -11,8 +11,13 @@ public class WitnessSpeech : MonoBehaviour {
 	public int total;
 	public int randomNumber;
 	public string world;
+    public Button takeNote;
 
     void Start() {
+
+        if (RandomStart.notesCounter >= 5)
+            takeNote.gameObject.SetActive(false);
+
 
         misteryNumber = RandomStart.GetMisteryNumber();
 
@@ -32,7 +37,9 @@ public class WitnessSpeech : MonoBehaviour {
             line = testimoniesList[testimoniesList.Count-1];
             changeText.GetComponent<Text>().text = line;
             testimoniesList.RemoveAt(testimoniesList.Count-1);
-        }
+        } else
+            takeNote.gameObject.SetActive(false);
+        
     }
 
 }

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8A326286-53EC-AD8E-09FB-D92C07533EB4}</ProjectGuid>
+    <ProjectGuid>{F0DD6FF6-00EF-2B05-2ED6-E3B029EA29FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,8 +57,10 @@
      <Compile Include="Assets\Scripts\BringToFront.cs" />
      <Compile Include="Assets\Scripts\ChangeImage.cs" />
      <Compile Include="Assets\Scripts\ChangeText.cs" />
+     <Compile Include="Assets\Scripts\CheckWinner.cs" />
      <Compile Include="Assets\Scripts\DisplayManager.cs" />
      <Compile Include="Assets\Scripts\GifAnimation.cs" />
+     <Compile Include="Assets\Scripts\ModalEndGame.cs" />
      <Compile Include="Assets\Scripts\ModalMap.cs" />
      <Compile Include="Assets\Scripts\ModalMistery.cs" />
      <Compile Include="Assets\Scripts\ModalNotepad.cs" />
@@ -68,25 +70,26 @@
      <Compile Include="Assets\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\SolveCase.cs" />
      <Compile Include="Assets\Scripts\TakeNotes.cs" />
+     <Compile Include="Assets\Scripts\TestModalEndGame.cs" />
      <Compile Include="Assets\Scripts\TestModalMistery.cs" />
      <Compile Include="Assets\Scripts\TestModalWindow.cs" />
      <Compile Include="Assets\Scripts\TestModalWindowMap.cs" />
      <Compile Include="Assets\Scripts\TestNotepadWindow.cs" />
      <Compile Include="Assets\Scripts\WitnessSpeech.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery v1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery v1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery v1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery v1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery v1/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2018.4.18f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -293,7 +296,7 @@
  <HintPath>/Applications/Unity/Hub/Editor/2018.4.18f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>/Users/nathaliekato/Documents/ComputerScience/P7/Desenv. de Projeto de SW/Ada&apos;s Mistery v1/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Applications/Unity/Hub/Editor/2018.4.18f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
