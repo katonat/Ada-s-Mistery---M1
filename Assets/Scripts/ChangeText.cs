@@ -26,7 +26,7 @@ public class ChangeText : MonoBehaviour {
     		if (randomNumber == 1)
     			changeText.GetComponent<Text>().text = "O paradigma de programação da linguagem JAVA baseia-se no conceito de Programação Orientada a Objetos, lembre-se desse conceito para resolver os próximos mistérios dessa linguagem.";
     		else
-    			changeText.GetComponent<Text>().text = "Java é uma linguagem que BLABLABLABLA";
+    			changeText.GetComponent<Text>().text = "Java é uma linguagem de programação e plataforma computacional lançada pela primeira vez pela Sun Microsystems em 1995.";
 
     	} else {
     		changeText.GetComponent<Text>().text = "None";
