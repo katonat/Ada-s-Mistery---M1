@@ -83,27 +83,27 @@ public class RandomStart : MonoBehaviour {
 
                 // PYTHON TESTIMONIES
                 pythonOptions.Add("Python é uma linguagem interpretada, ou seja, a tradução dos comandos é feita em tempo de execução.");
-                pythonOptions.Add("Python é considerada uma linguagem multiplataforma.");
-                pythonOptions.Add("O comando DO-WHILE garante que pelo menos uma vez o comando seja executado.");
+                pythonOptions.Add("Em computação, costumamos considerar o 0 como 'falso' e o 1 como 'verdadeiro'.");
+                pythonOptions.Add("Sobre a sentença que você procura, ouvi dizer que mesmo que a condição seja falsa, o comando é executado uma vez.");
                 pythonOptions.Add("A única coisa que posso fazer é dar um exemplo do comando FOR em Python:\n\"for nome in nomes:\"");
 
                 // JAVA TESTIMONIES
                 javaOptions.Add("Quando não se sabe quantas vezes um comando deve ser repetido, utilizamos o comando WHILE.");
-                javaOptions.Add("Projetos em JAVA costumam utilizar as classes dentro de pacotes.");
+                javaOptions.Add("O comando DO-WHILE garante que pelo menos uma vez o comando seja executado.");
                 javaOptions.Add("Só sei que ao utilizar o WHILE, pode ser que o comando nunca seja executado.");
                 javaOptions.Add("Se eu fosse você pesquisaria mais sobre esse tipo de estrutura:\nFaça {(comando)} Enquanto (condição);");
 
                 // PYTHON ANNOTATIONS
                 pythonAnnotations.Add("Python é uma linguagem interpretada");
-                pythonAnnotations.Add("Python é multiplataforma");
-                pythonAnnotations.Add("DO-WHILE executa o comando pelo menos uma vez");
+                pythonAnnotations.Add("1 = true\n0 = false");
+                pythonAnnotations.Add("Executa o comando uma vez se a condição for falsa");
                 pythonAnnotations.Add("For em Python:\nfor nome in nomes:");
 
                 // JAVA ANNOTATIONS
                 javaAnnotations.Add("A quantidade de repetições é incerta com WHILE");
-                javaAnnotations.Add("Java utiliza pacotes");
+                javaAnnotations.Add("DO-WHILE executa o comando pelo menos uma vez");
                 javaAnnotations.Add("WHILE: o comando pode nunca ser executado");
-                javaAnnotations.Add("Pesquisar:\nFaça { (comando) } Enquanto (condição);");
+                javaAnnotations.Add("Pesquisar:\nFaça {(comando)} Enquanto (condição);");
 
                 break;
             default:
