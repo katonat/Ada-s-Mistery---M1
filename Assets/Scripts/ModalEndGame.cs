@@ -8,6 +8,7 @@ public class ModalEndGame : MonoBehaviour {
 
 	public GameObject modalendgamepanel;
 
+
 	private static ModalEndGame modalendgame;
 
     public static ModalEndGame Instance () {
@@ -21,10 +22,12 @@ public class ModalEndGame : MonoBehaviour {
 
     public void redirectEndGame() {
     	
-		if (RandomStart.win)
-			SceneManager.LoadScene("Congratulations");
-		else
+		if (RandomStart.win) {
+            SceneManager.LoadScene("Congratulations");
+		} else {
 			SceneManager.LoadScene("GameOver");
+        }
+
 		Debug.Log(RandomStart.win);
     }
 

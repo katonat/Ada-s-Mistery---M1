@@ -6,12 +6,14 @@ public class TestModalEndGame : MonoBehaviour {
 
 	private ModalEndGame modalendgame;
 
+
 	void Awake() {
 		modalendgame = ModalEndGame.Instance();
 	}
 
 	public void acivateEndGamePanel() {
-		modalendgame.activeEndGamePanel();
+		// modalendgame.activeEndGamePanel();
+		RandomStart.endgame = true;
 	}
 
 	public void loadEndGame() {

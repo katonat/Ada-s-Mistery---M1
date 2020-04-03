@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\ChangeText.cs" />
      <Compile Include="Assets\Scripts\CheckWinner.cs" />
      <Compile Include="Assets\Scripts\DisplayManager.cs" />
+     <Compile Include="Assets\Scripts\EndGamePanelDelay.cs" />
      <Compile Include="Assets\Scripts\GifAnimation.cs" />
      <Compile Include="Assets\Scripts\LoadingIntro.cs" />
      <Compile Include="Assets\Scripts\ModalEndGame.cs" />

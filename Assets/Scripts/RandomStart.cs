@@ -11,6 +11,7 @@ public class RandomStart : MonoBehaviour {
 	public int randomNumber;
     private static int misteryNumber;
     public static bool win = false;
+    public static bool endgame = false;
 
     // TESTIMONIES
     public static List<string> pythonOptions;

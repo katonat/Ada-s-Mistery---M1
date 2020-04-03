@@ -20,8 +20,9 @@ public class CheckWinner : MonoBehaviour {
 	}
 
     void Update() {
-        if (caseSolved.activeSelf)
+        if (caseSolved.activeSelf) {
             RandomStart.win = true;
+        }
     }
 
 
