@@ -2095,7 +2095,6 @@ GameObject:
   - component: {fileID: 1931585356}
   - component: {fileID: 1931585357}
   - component: {fileID: 1931585358}
-  - component: {fileID: 1931585359}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -2216,7 +2215,7 @@ MonoBehaviour:
   total: 0
   randomNumber: 0
   world: Java
-  takeNote: {fileID: 0}
+  takeNote: {fileID: 1371258074}
 --- !u!114 &1931585355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2254,18 +2253,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1931585358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931585348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 226697cf6a23844e9a52e93840d70a97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1931585359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

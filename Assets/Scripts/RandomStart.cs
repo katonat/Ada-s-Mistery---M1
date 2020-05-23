@@ -47,13 +47,14 @@ public class RandomStart : MonoBehaviour {
 
     public void Start() {
         win = false;
+        endgame = false;
         notesCounter = 0;
         randomNumber = randomMistery();
 
         switch(randomNumber) {
             case 1:
                 Debug.Log("Mistery 1. Resp.: PYTHON");
-
+                Debug.Log(win);
                 // PYTHON TESTIMONIES
                 pythonOptions.Add("Python é considerada uma linguagem de alto nível, quer dizer que sua escrita se aproxima mais a linguagem humana.");
                 pythonOptions.Add("Em Python, não é necessário declarar as variáveis explicitamente, quer dizer que tem tipagem dinâmica.");
@@ -81,7 +82,7 @@ public class RandomStart : MonoBehaviour {
                 break;
             case 2:
                 Debug.Log("Mistery 2. Resp.: DO-WHILE");
-
+                Debug.Log(win);
                 // PYTHON TESTIMONIES
                 pythonOptions.Add("Python é uma linguagem interpretada, ou seja, a tradução dos comandos é feita em tempo de execução.");
                 pythonOptions.Add("Em computação, costumamos considerar o 0 como 'falso' e o 1 como 'verdadeiro'.");

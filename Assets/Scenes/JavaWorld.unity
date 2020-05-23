@@ -124,6 +124,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TitlePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 659154371023383762, guid: e5ad10abd61934e818e4c383eab973f5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dcdb7b326c6da4efe8857308dd837406,
+        type: 3}
     - target: {fileID: 1292294728730735764, guid: e5ad10abd61934e818e4c383eab973f5,
         type: 3}
       propertyPath: m_Color.r
@@ -148,6 +154,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914849321601486416, guid: e5ad10abd61934e818e4c383eab973f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 318.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914849321601486416, guid: e5ad10abd61934e818e4c383eab973f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 131.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914849321601486416, guid: e5ad10abd61934e818e4c383eab973f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914849321601486416, guid: e5ad10abd61934e818e4c383eab973f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 117.81
       objectReference: {fileID: 0}
     - target: {fileID: 3820654931193699091, guid: e5ad10abd61934e818e4c383eab973f5,
         type: 3}
@@ -1134,6 +1160,7 @@ GameObject:
   - component: {fileID: 924308371}
   - component: {fileID: 924308372}
   - component: {fileID: 924308373}
+  - component: {fileID: 924308374}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -1316,6 +1343,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f53989085fb948f4a235bf70a891a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &924308374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924308362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7dc598f687c4dba9d419ba68a80158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 3
+  timElapesed: 0
+  endGamePanel: {fileID: 735548413}
 --- !u!1 &1009804168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6697827073419320035, guid: 4b661a25d98d54ffa8be9096743be7e3,
