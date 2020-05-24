@@ -39,6 +39,12 @@ public class CheckWinner : MonoBehaviour {
                 caseSolved.SetActive(true);
             else
 				wrong.SetActive(true);
+
+        } else if (misteryNumber == 3) {
+            if (GameObject.Find("Text1").GetComponent<Text>().text == "Polimorfismo")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
         }
     }
 
@@ -54,8 +60,16 @@ public class CheckWinner : MonoBehaviour {
                 caseSolved.SetActive(true);
             else
 				wrong.SetActive(true);
+        } else if (misteryNumber == 3) {
+            if (GameObject.Find("Text2").GetComponent<Text>().text == "Polimorfismo")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
         }
-    }    public void checkWinThree() {
+    } 
+
+
+    public void checkWinThree() {
 
         if (misteryNumber == 1) {
             if (GameObject.Find("Text3").GetComponent<Text>().text == "Python")
@@ -67,8 +81,16 @@ public class CheckWinner : MonoBehaviour {
                 caseSolved.SetActive(true);
             else
 				wrong.SetActive(true);
+        } else if (misteryNumber == 3) {
+            if (GameObject.Find("Text3").GetComponent<Text>().text == "Polimorfismo")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
         }
-    }    public void checkWinFour() {
+    }    
+
+
+    public void checkWinFour() {
 
         if (misteryNumber == 1) {
             if (GameObject.Find("Text4").GetComponent<Text>().text == "Python")
@@ -80,8 +102,16 @@ public class CheckWinner : MonoBehaviour {
                 caseSolved.SetActive(true);
             else
 				wrong.SetActive(true);
+        } else if (misteryNumber == 3) {
+            if (GameObject.Find("Text4").GetComponent<Text>().text == "Polimorfismo")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
         }
-    }    public void checkWinFive() {
+    }    
+
+
+    public void checkWinFive() {
 
         if (misteryNumber == 1) {
             if (GameObject.Find("Text5").GetComponent<Text>().text == "Python")
@@ -93,6 +123,11 @@ public class CheckWinner : MonoBehaviour {
                 caseSolved.SetActive(true);
             else
 				wrong.SetActive(true);
+        } else if (misteryNumber == 3) {
+            if (GameObject.Find("Text5").GetComponent<Text>().text == "Polimorfismo")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
         }
     }
 }

@@ -43,6 +43,12 @@ public class SolveCase : MonoBehaviour {
         	options.Add("While");
         	options.Add("Do - While");
         	options.Add("Switch");
+        } else if (misteryNumber == 3) {
+            options.Add("Polimorfismo");
+            options.Add("Encapsulamento");
+            options.Add("Herança");
+            options.Add("Abstração");
+            options.Add("Interface");
         }
 
         while (counter < 5) {

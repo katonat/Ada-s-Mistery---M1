@@ -28,13 +28,18 @@ public class TestModalWindow : MonoBehaviour {
             SceneManager.LoadScene("WitnessJava");
         else if (world == "Python")
             SceneManager.LoadScene("WitnessPython");
+        else if (world == "C")
+            SceneManager.LoadScene("WitnessC");
     }
 
     void Witness2Dialog () {
         if ( world == "Java")
             SceneManager.LoadScene("WitnessJava");
         else if (world == "Python")
-            SceneManager.LoadScene("WitnessPython");    }
+            SceneManager.LoadScene("WitnessPython");   
+        else if (world == "C")
+            SceneManager.LoadScene("WitnessC");
+    }
 
     void CancelDialog () {
     }

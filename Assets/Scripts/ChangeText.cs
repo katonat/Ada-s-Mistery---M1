@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class ChangeText : MonoBehaviour {
 
 	public GameObject changeText;
-	public int misteryNumber;
 	public int total;
 	public int randomNumber;
 	public string world;
@@ -13,7 +12,6 @@ public class ChangeText : MonoBehaviour {
 
     	total = 2;
         randomNumber = Random.Range(1, total+1);
-        misteryNumber = RandomStart.GetMisteryNumber();
 
     	if (world == "Python") {
     		if (randomNumber == 1)
@@ -26,6 +24,13 @@ public class ChangeText : MonoBehaviour {
     			changeText.GetComponent<Text>().text = "O paradigma de programação da linguagem JAVA baseia-se no conceito de Programação Orientada a Objetos.";
     		else
     			changeText.GetComponent<Text>().text = "Java está atualmente entre as 3 linguagens mais populares do mundo.";
+
+        } else if (world == "C") {
+            if (randomNumber == 1)
+                changeText.GetComponent<Text>().text = "C bla bla";
+            else
+                changeText.GetComponent<Text>().text = "C ble ble";
+
 
     	} else {
     		changeText.GetComponent<Text>().text = "None";

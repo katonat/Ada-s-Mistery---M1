@@ -33,6 +33,8 @@ public class AdasLine : MonoBehaviour {
         	text = "Há boatos sobre uma LINGUAGEM DE PROGRAMAÇÃO que está sendo muito utilizada em implementações de Inteligência Artificial. Programadores comentaram que isso pode ter a ver com sua sintaxe.";
         else if (mistery == 2)
         	text = "Uma LINHA DE CÓDIGO desconhecida foi encontrada e sua origem precisa ser descoberta. Testemunhas disseram que podia se tratar de uma repetição de comandos.";
+        else if (mistery == 3)
+            text = "Estamos investigando uma característica suspeita que está associada com um paradigma de programação muito conhecido. Alguns acreditam se tratar de uma espécie de mutação.";
     	
     	changeText.GetComponent<Text>().text = text;
     }

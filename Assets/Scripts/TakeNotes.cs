@@ -12,6 +12,8 @@ public class TakeNotes : MonoBehaviour {
 	        saveJavaAnnotation();
 	    else if (world == "Python")
 	        savePythonAnnotation();
+        else if (world == "C")
+            saveCAnnotation();
     }
 
 
@@ -27,6 +29,14 @@ public class TakeNotes : MonoBehaviour {
         if (RandomStart.javaOptions.Count >= 0) {
             RandomStart.playerAnnotations.Insert(RandomStart.notesCounter, RandomStart.javaAnnotations[RandomStart.javaOptions.Count]);
             RandomStart.javaAnnotations.RemoveAt(RandomStart.javaOptions.Count);
+            RandomStart.notesCounter++;
+        }
+    }
+
+    public void saveCAnnotation() {
+        if (RandomStart.cOptions.Count >= 0) {
+            RandomStart.playerAnnotations.Insert(RandomStart.notesCounter, RandomStart.cAnnotations[RandomStart.cOptions.Count]);
+            RandomStart.cAnnotations.RemoveAt(RandomStart.cOptions.Count);
             RandomStart.notesCounter++;
         }
     }

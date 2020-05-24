@@ -9,6 +9,8 @@ public class ModalMap : MonoBehaviour {
 
     public Button javaWorld;
     public Button pythonWorld;
+    public Button cWorld;
+
     public Button cancel;
     public GameObject modalPanelObject;
     private static ModalMap modalPanel;
@@ -33,17 +35,21 @@ public class ModalMap : MonoBehaviour {
 
         javaWorld.onClick.RemoveAllListeners();
         javaWorld.onClick.AddListener (changeSceneJavaWorld);
-        // javaWorld.onClick.AddListener (ClosePanel);
 
         pythonWorld.onClick.RemoveAllListeners();
         pythonWorld.onClick.AddListener (changeScenePythonWorld);
-        // pythonWorld.onClick.AddListener (ClosePanel);
+
+        cWorld.onClick.RemoveAllListeners();
+        cWorld.onClick.AddListener (changeSceneCWorld);
 
         cancel.onClick.RemoveAllListeners();
         cancel.onClick.AddListener (ClosePanel);
 
+
         javaWorld.gameObject.SetActive (true);
         pythonWorld.gameObject.SetActive (true);
+        cWorld.gameObject.SetActive (true);
+
         cancel.gameObject.SetActive (true);
     }
 
@@ -57,6 +63,10 @@ public class ModalMap : MonoBehaviour {
 
     void changeSceneJavaWorld () {
         SceneManager.LoadScene("JavaWorld");
+    }
+
+    void changeSceneCWorld () {
+        SceneManager.LoadScene("CWorld");
     }
 
 }

@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Congratulations.unity
     guid: 9265dd31b677e314b947d053691d2dd9
+  - enabled: 1
+    path: Assets/Scenes/WitnessC.unity
+    guid: 2a96588ac5e534f1695f5794a775b2a5
+  - enabled: 1
+    path: Assets/Scenes/CWorld.unity
+    guid: 8350ae03e5e834cc587137b331af49d1
   m_configObjects: {}

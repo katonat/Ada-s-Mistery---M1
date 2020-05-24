@@ -27,6 +27,9 @@ public class WitnessSpeech : MonoBehaviour {
         } else if (world == "Java") {
             switchLines(RandomStart.javaOptions, RandomStart.javaCont);
             RandomStart.javaCont++;
+        } else if (world == "C") {
+            switchLines(RandomStart.cOptions, RandomStart.cCont);
+            RandomStart.cCont++;
         }
     }
 

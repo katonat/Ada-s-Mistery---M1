@@ -10,6 +10,7 @@ public class RemoveWitnessSprite : MonoBehaviour {
 
         RandomStart.pythonCont = 0;
         RandomStart.javaCont = 0;
+        RandomStart.cCont = 0;
     }
 
 }
