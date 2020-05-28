@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/WitnessPython.unity
     guid: 2a3d097ebd59e4d4f907bf74dfafc96b
   - enabled: 1
+    path: Assets/Scenes/WitnessPhp.unity
+    guid: fedab05958c324978a8f3f4e7b3bf07b
+  - enabled: 1
+    path: Assets/Scenes/PhpWorld.unity
+    guid: 19bd63099d5234ff6bbb515bff293501
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 137694ac10c2849d980bff796dd54ab0
   - enabled: 1

@@ -28,7 +28,12 @@ public class SolveCase : MonoBehaviour {
 
 		misteryNumber = RandomStart.GetMisteryNumber();
 
-        if (RandomStart.notesCounter == 5 || (RandomStart.pythonOptions.Count == 0 && RandomStart.javaOptions.Count == 0))
+        if (RandomStart.notesCounter == 5 || (
+            RandomStart.pythonOptions.Count == 0 &&
+            RandomStart.cOptions.Count == 0 &&
+            RandomStart.javaOptions.Count == 0 &&
+            RandomStart.phpOptions.Count == 0
+            ))
             solveCasePanel.SetActive (true);
 
         if (misteryNumber == 1) {
@@ -49,6 +54,12 @@ public class SolveCase : MonoBehaviour {
             options.Add("Herança");
             options.Add("Abstração");
             options.Add("Interface");
+        } else if (misteryNumber == 4) {
+            options.Add("SWITCH-CASE");
+            options.Add("IF-ELSE");
+            options.Add("TRY-CATCH");
+            options.Add("FOREACH");
+            options.Add("ELIF");
         }
 
         while (counter < 5) {

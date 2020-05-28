@@ -30,6 +30,9 @@ public class WitnessSpeech : MonoBehaviour {
         } else if (world == "C") {
             switchLines(RandomStart.cOptions, RandomStart.cCont);
             RandomStart.cCont++;
+        } else if (world == "PHP") {
+            switchLines(RandomStart.phpOptions, RandomStart.phpCont);
+            RandomStart.phpCont++;  
         }
     }
 

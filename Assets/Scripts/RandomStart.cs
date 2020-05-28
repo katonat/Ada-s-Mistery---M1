@@ -17,10 +17,12 @@ public class RandomStart : MonoBehaviour {
     public static List<string> pythonOptions;
     public static List<string> javaOptions;
     public static List<string> cOptions;
+    public static List<string> phpOptions;
 
     public static int pythonCont = 0;
     public static int javaCont = 0;
     public static int cCont = 0;
+	public static int phpCont = 0;
 
     public static int notesCounter = 0;
 
@@ -28,24 +30,28 @@ public class RandomStart : MonoBehaviour {
     public static List<string> pythonAnnotations;
     public static List<string> javaAnnotations;
     public static List<string> cAnnotations;
+    public static List<string> phpAnnotations;
 
     public static List<string> playerAnnotations;
 
 
     public RandomStart() {
+
         pythonOptions = new List<string>();
         javaOptions = new List<string>();
         cOptions = new List<string>();
+        phpOptions = new List<string>();        
 
         pythonAnnotations = new List<string>();
         javaAnnotations = new List<string>();
         cAnnotations = new List<string>();
+        phpAnnotations = new List<string>();
 
         playerAnnotations = new List<string>() {"", "", "", "", ""};
     }
 
     public int randomMistery() {
-        total = 3;
+        total = 4;
         misteryNumber = Random.Range(1, total+1);
         return misteryNumber;
     }
@@ -84,6 +90,12 @@ public class RandomStart : MonoBehaviour {
                 cOptions.Add("C é uma linguagem compilada e não interpretada.");
                 cOptions.Add("Em C, a seguinte linha de comando exibe na tela a frase \"Olá Mundo\":printf(\"Olá Mundo\");");
 
+                // PHP
+                phpOptions.Add("PHP provavelmente não é a melhor linguagem para criação de aplicações desktop com interfaces gráficas.");
+                phpOptions.Add("Assim como Python, PHP possui tipagem dinâmica e é uma linguagem interpretada.");
+                phpOptions.Add("Dizem por aí que PHP pode ser embutida dentro do HTML.");
+                phpOptions.Add("Fiquei sabendo que PHP é bastante usado em aplicações WEB.");                
+
                 						// ANNOTATIONS
                 // PYTHON 
                 pythonAnnotations.Add("Python é uma linguagem de alto nível");
@@ -102,6 +114,12 @@ public class RandomStart : MonoBehaviour {
                 cAnnotations.Add("C é mais próxima de linguagens de baixo nível");
                 cAnnotations.Add("C é compilada e não interpretada");
                 cAnnotations.Add("Em C o printf exibe algo na tela");
+
+                // PHP
+                phpAnnotations.Add("PHP não é a melhor linguagem para aplicações desktop com interface gráfica");
+                phpAnnotations.Add("PHP é interpretada e tem tipagem dinâmica");
+                phpAnnotations.Add("PHP pode ser embutida dentro do HTML");
+                phpAnnotations.Add("PHP é muito usado em aplicações web");   
 
                 break;
             case 2:
@@ -126,6 +144,12 @@ public class RandomStart : MonoBehaviour {
                 cOptions.Add("As estruturas de repetição, executam a repetição de um conjunto de instruções enquanto uma determinada condição é verdadeira.");
                 cOptions.Add("Ouvi sobre um comando de repetição que pode te ajudar. Primeiro se executa o comando e depois é analisada a condição.");
 
+                // PHP
+                phpOptions.Add("Só acho que se você está procurando uma estrutura que execute pelo menos uma vez, não deveria optar pelo WHILE.");
+                phpOptions.Add("O loop DO-WHILE tem comportamento parecido com o WHILE, com a diferença que a validação da condição é feita no final de cada iteração.");
+                phpOptions.Add("O PHP possui quatro estruturas de repetição: FOR, FOREACH, WHILE e DO-WHILE.");
+                phpOptions.Add("Tudo o que sei é que estruturas de repetição permitem executar trechos de código mais de uma vez de acordo com uma condição."); 
+
                 							// ANNOTATIONS
                 // PYTHON
                 pythonAnnotations.Add("Python é uma linguagem interpretada");
@@ -144,6 +168,12 @@ public class RandomStart : MonoBehaviour {
                 cAnnotations.Add("Comando for em C: for(i = 0; i < 5; i++)");
                 cAnnotations.Add("Se a condição for verdadeira a instrução é executada");
                 cAnnotations.Add("Procurar por comando que executa primeiro e analisa depois");
+
+                // PHP
+                phpAnnotations.Add("WHILE pode não executar nenhuma vez");
+                phpAnnotations.Add("DO-WHILE valida a condição no final da iteração");
+                phpAnnotations.Add("PHP possui FOR, FOREACH, WHILE e DO-WHILE");
+                phpAnnotations.Add("Estruturas de repetição permitem executar um código mais de uma vez");
 
                 break;
             case 3:
@@ -168,6 +198,12 @@ public class RandomStart : MonoBehaviour {
                 cOptions.Add("Fiquei sabendo que Herança e Polimorfismo estão relacionados.");
                 cOptions.Add("A programação estruturada tem ênfase em sequência, decisão e iteração.");
 
+                // PHP
+                phpOptions.Add("Em POO, encapsulamento significa separar o programa em partes, o mais isolado possível.");
+                phpOptions.Add("O termo polimorfismo é originário do grego e significa \"muitas formas\" (poli = muitas, morphos = formas).");
+                phpOptions.Add("Ouvi dizer que a partir da versão 5 do PHP ficou mais simples implementar encapsulamento de métodos e propriedades.");
+                phpOptions.Add("Os paradigmas de PHP são procedural, reflexão, orientação a objetos, funcional."); 
+                
                 						// ANNOTATIONS
                 // PYTHON
                 pythonAnnotations.Add("Herança: uma classe herda características da outra");
@@ -186,6 +222,67 @@ public class RandomStart : MonoBehaviour {
                 cAnnotations.Add("Polimorfismo: um método assume formas diferentes");
                 cAnnotations.Add("Herança e Polimorfismo estão relacionados");
                 cAnnotations.Add("Programação estruturada: sequência, decisão, iteração");
+
+                // PHP
+                phpAnnotations.Add("Encapsulamento: isolar o programa em partes");
+                phpAnnotations.Add("Polimorfismo: muitas formas");
+                phpAnnotations.Add("PHP 5: melhorou o encapsulamento");
+                phpAnnotations.Add("Paradigmas de PHP: procedural, reflexão, orientação a objetos, funcional");
+
+                break;
+
+            	case 4:
+                Debug.Log("Mistery 4. Resp.: SWITCH-CASE");
+                Debug.Log(win);
+                						// TESTIMONIES
+                // PYTHON 
+                pythonOptions.Add("Apesar de ser opcional, o uso do BREAK em comando SWITCH-CASE pode ser decisivo para a sua correta execução.");
+                pythonOptions.Add("Ouvi falar de uma estrutura que avalia cada CASO na busca pela igualdade da variável passada como parâmetro, você devia investigar mais sobre isso.");
+                pythonOptions.Add("Em alguma situações você pode usar o IF-ELSE ou o SWITCH-CASE para resolver o mesmo problema.");
+                pythonOptions.Add("Sobre estrutura condicional, posso dizer que determinado comando é executado se a condição for verdadeira.");
+
+				// JAVA
+                javaOptions.Add("Acredito que a estrutura que você procura busca somente valores iguais à variável fornecida.");
+                javaOptions.Add("DEFAULT é uma palavra reservada que podemos utilizar no SWITCH-CASE para direcionar o programa no caso de ser digitado um valor inválido.");
+                javaOptions.Add("Quando estruturamos um menu de opções, geralmente temos várias opções de escolha que podem ser numeradas (caso 1, caso 2, caso 3 , etc).");
+                javaOptions.Add("Em Java, utilizamos o operador == para comprar se um valor é igual ao outro.");
+
+				// C
+                cOptions.Add("O comando SWITCH-CASE compara uma mesma variável com vários casos.");
+                cOptions.Add("Em switch-case, se o caso selecionado não possuir o BREAK no final do comando, ele entra na condição abaixo dele.");
+                cOptions.Add("Pelo que ouvi falar, a estrutura que você procura é muito utilizada para programar menus em C.");
+                cOptions.Add("Existem vários operadores de comparação quando falamos de estruturas condicionais. Temos igualdade, diferença, maior que, menor que, etc.");
+
+                // PHP
+                phpOptions.Add("Tenho a impressão que a estrutura que você procura é utilizada quando queremos comparar a mesma variável ou expressão com várias opções.");
+                phpOptions.Add("Para expressões condicionais mais complexas, como comparar se um valor é maior (>) que o outros, usamos o IF-ELSE ao invés do SWITCH-CASE.");
+                phpOptions.Add("Na maioria das linguagens de programação, a lógica das estruturas condicionais é muito parecida.");
+                phpOptions.Add("Tudo que sei, é que você deveria procurar mais informações sobre estruturas que utilizam o operador DEFAULT."); 
+                
+                						// ANNOTATIONS
+                // PYTHON
+                pythonAnnotations.Add("O BREAK é um comando importante no SWITCH-CASE");
+                pythonAnnotations.Add("Investigar sobre estrutura que avalia casos buscando pela igualdade");
+                pythonAnnotations.Add("IF-ELSE e SWITCH-CASE podem ser usados com o mesmo propósito");
+                pythonAnnotations.Add("O comando é executado se a condição for veradeira");
+
+                // JAVA
+                javaAnnotations.Add("Estrutura que busca valores iguais");
+                javaAnnotations.Add("DEFAULT é usado no SWITCH-CASE para valores inválidos");
+                javaAnnotations.Add("Estruturas de Menus: Caso 1, Caso 2, Caso 3");
+                javaAnnotations.Add("== é um operador de igualdade");
+
+                // C
+                cAnnotations.Add("SWITCH-CASE compara uma variável a vários casos");
+                cAnnotations.Add("O BREAK impede que o caso selecionado não entre na condição abaixo dele");
+                cAnnotations.Add("Buscar estruturas de fazer Menus em C");
+                cAnnotations.Add("Exemplos de operadores de comparação: igualdade, diferença, etc");
+
+                // PHP
+                phpAnnotations.Add("Procuro uma estrutura que compara uma variável com opções");
+                phpAnnotations.Add("MAIOR QUE (>) usamos com IF-ELSE");
+                phpAnnotations.Add("A lógica das estruturas condicionais é parecida em diferentes linguagens");
+                phpAnnotations.Add("Procuro uma estrutura que utiliza o DEFAULT");
 
                 break;
             default:

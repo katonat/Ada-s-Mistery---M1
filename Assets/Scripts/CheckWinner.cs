@@ -45,6 +45,11 @@ public class CheckWinner : MonoBehaviour {
                 caseSolved.SetActive(true);
             else
                 wrong.SetActive(true);
+        } else if (misteryNumber == 4) {
+            if (GameObject.Find("Text1").GetComponent<Text>().text == "SWITCH-CASE")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
         }
     }
 
@@ -62,6 +67,11 @@ public class CheckWinner : MonoBehaviour {
 				wrong.SetActive(true);
         } else if (misteryNumber == 3) {
             if (GameObject.Find("Text2").GetComponent<Text>().text == "Polimorfismo")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
+        } else if (misteryNumber == 4) {
+            if (GameObject.Find("Text2").GetComponent<Text>().text == "SWITCH-CASE")
                 caseSolved.SetActive(true);
             else
                 wrong.SetActive(true);
@@ -86,6 +96,11 @@ public class CheckWinner : MonoBehaviour {
                 caseSolved.SetActive(true);
             else
                 wrong.SetActive(true);
+        } else if (misteryNumber == 4) {
+            if (GameObject.Find("Text3").GetComponent<Text>().text == "SWITCH-CASE")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
         }
     }    
 
@@ -107,6 +122,11 @@ public class CheckWinner : MonoBehaviour {
                 caseSolved.SetActive(true);
             else
                 wrong.SetActive(true);
+        } else if (misteryNumber == 4) {
+            if (GameObject.Find("Text4").GetComponent<Text>().text == "SWITCH-CASE")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
         }
     }    
 
@@ -125,6 +145,11 @@ public class CheckWinner : MonoBehaviour {
 				wrong.SetActive(true);
         } else if (misteryNumber == 3) {
             if (GameObject.Find("Text5").GetComponent<Text>().text == "Polimorfismo")
+                caseSolved.SetActive(true);
+            else
+                wrong.SetActive(true);
+        } else if (misteryNumber == 4) {
+            if (GameObject.Find("Text5").GetComponent<Text>().text == "SWITCH-CASE")
                 caseSolved.SetActive(true);
             else
                 wrong.SetActive(true);

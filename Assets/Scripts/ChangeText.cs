@@ -27,10 +27,15 @@ public class ChangeText : MonoBehaviour {
 
         } else if (world == "C") {
             if (randomNumber == 1)
-                changeText.GetComponent<Text>().text = "C bla bla";
+                changeText.GetComponent<Text>().text = "C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa e procedural.";
             else
-                changeText.GetComponent<Text>().text = "C ble ble";
-
+                changeText.GetComponent<Text>().text = "C tem influenciado muitas outras linguagens de programação (por exemplo, a linguagem Java).";
+        
+        } else if (world == "PHP") {
+            if (randomNumber == 1)
+                changeText.GetComponent<Text>().text = "PHP é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web.";
+            else
+                changeText.GetComponent<Text>().text = "PHP é uma linguagem de programação mundialmente conhecida e uma das mais utilizadas pela facilidade em aprendê-la e manuseá-la, além de ser compatível com quase todos os sistemas operacionais.";
 
     	} else {
     		changeText.GetComponent<Text>().text = "None";

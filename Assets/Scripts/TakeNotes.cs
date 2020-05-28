@@ -14,6 +14,8 @@ public class TakeNotes : MonoBehaviour {
 	        savePythonAnnotation();
         else if (world == "C")
             saveCAnnotation();
+        else if (world == "PHP")
+            savePhpAnnotation();
     }
 
 
@@ -37,6 +39,14 @@ public class TakeNotes : MonoBehaviour {
         if (RandomStart.cOptions.Count >= 0) {
             RandomStart.playerAnnotations.Insert(RandomStart.notesCounter, RandomStart.cAnnotations[RandomStart.cOptions.Count]);
             RandomStart.cAnnotations.RemoveAt(RandomStart.cOptions.Count);
+            RandomStart.notesCounter++;
+        }
+    }
+
+    public void savePhpAnnotation() {
+        if (RandomStart.phpOptions.Count >= 0) {
+            RandomStart.playerAnnotations.Insert(RandomStart.notesCounter, RandomStart.phpAnnotations[RandomStart.phpOptions.Count]);
+            RandomStart.phpAnnotations.RemoveAt(RandomStart.phpOptions.Count);
             RandomStart.notesCounter++;
         }
     }

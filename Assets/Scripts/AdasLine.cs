@@ -35,7 +35,9 @@ public class AdasLine : MonoBehaviour {
         	text = "Uma LINHA DE CÓDIGO desconhecida foi encontrada e sua origem precisa ser descoberta. Testemunhas disseram que podia se tratar de uma repetição de comandos.";
         else if (mistery == 3)
             text = "Estamos investigando uma característica suspeita que está associada com um paradigma de programação muito conhecido. Alguns acreditam se tratar de uma espécie de mutação.";
-    	
+    	else if (mistery == 4)
+            text = "Recebemos informações de uma estrutura condicional suspeita. As informações confirmaram que se trata de uma comparação de valores.";
+
     	changeText.GetComponent<Text>().text = text;
     }
 

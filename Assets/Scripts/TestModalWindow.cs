@@ -30,6 +30,8 @@ public class TestModalWindow : MonoBehaviour {
             SceneManager.LoadScene("WitnessPython");
         else if (world == "C")
             SceneManager.LoadScene("WitnessC");
+        else if (world == "PHP")
+            SceneManager.LoadScene("WitnessPhp");
     }
 
     void Witness2Dialog () {
@@ -39,6 +41,8 @@ public class TestModalWindow : MonoBehaviour {
             SceneManager.LoadScene("WitnessPython");   
         else if (world == "C")
             SceneManager.LoadScene("WitnessC");
+        else if (world == "PHP")
+            SceneManager.LoadScene("WitnessPhp"); 
     }
 
     void CancelDialog () {
